@@ -20,6 +20,14 @@ chia_logs:
     remote_user: "chia"
     remote_port: 22
 
+# Please enable / disable which services chiadog should
+# be actively monitoring. If you have running everything
+# on the same machine, you can leave the default config
+services:
+  full_node: true
+  harvester: true
+  wallet: true
+
 # Enable this and chiadog will ping a remote server every 5 minutes
 # That way you can know that the monitoring is running as expected
 keep_alive_monitor:
