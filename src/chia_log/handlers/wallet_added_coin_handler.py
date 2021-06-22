@@ -11,7 +11,7 @@ from src.notifier import Event, EventService, EventType, EventPriority
 
 class WalletAddedCoinHandler(LogHandler):
     """This handler parses all logs that report wallet
-    receiving XCH and creates user notifications.
+    receiving XFX and creates user notifications.
     """
 
     def __init__(self):
@@ -29,14 +29,14 @@ class WalletAddedCoinHandler(LogHandler):
             total_mojos += coin_msg.amount_mojos
 
         if total_mojos > 0:
-            chia_coins = total_mojos / 1e12
-            xch_string = f"{chia_coins:.12f}".rstrip("0").rstrip(".")
+            flax_coins = total_mojos / 1e12
+            xfx_string = f"{flax_coins:.12f}".rstrip("0").rstrip(".")
             events.append(
                 Event(
                     type=EventType.USER,
                     priority=EventPriority.LOW,
                     service=EventService.WALLET,
-                    message=f"Cha-ching! Just received {xch_string} XCH ☘️",
+                    message=f"Cha-ching! Just received {xfx_string} XFX ☘️",
                 )
             )
 

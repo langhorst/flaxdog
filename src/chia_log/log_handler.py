@@ -2,11 +2,11 @@
 from typing import Optional
 
 # project
-from src.chia_log.handlers.daily_stats.stats_manager import StatsManager
-from src.chia_log.handlers.harvester_activity_handler import HarvesterActivityHandler
-from src.chia_log.handlers.finished_signage_point_handler import FinishedSignagePointHandler
-from src.chia_log.handlers.wallet_added_coin_handler import WalletAddedCoinHandler
-from src.chia_log.log_consumer import LogConsumerSubscriber, LogConsumer
+from src.flax_log.handlers.daily_stats.stats_manager import StatsManager
+from src.flax_log.handlers.harvester_activity_handler import HarvesterActivityHandler
+from src.flax_log.handlers.finished_signage_point_handler import FinishedSignagePointHandler
+from src.flax_log.handlers.wallet_added_coin_handler import WalletAddedCoinHandler
+from src.flax_log.log_consumer import LogConsumerSubscriber, LogConsumer
 from src.notifier.notify_manager import NotifyManager
 
 

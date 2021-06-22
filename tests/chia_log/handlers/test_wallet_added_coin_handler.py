@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 # project
-from src.chia_log.handlers.wallet_added_coin_handler import WalletAddedCoinHandler
+from src.flax_log.handlers.wallet_added_coin_handler import WalletAddedCoinHandler
 from src.notifier import EventType, EventService, EventPriority
 
 
@@ -21,7 +21,7 @@ class TestWalledAddedCoinHandler(unittest.TestCase):
         self.assertEqual(events[0].type, EventType.USER, "Unexpected event type")
         self.assertEqual(events[0].priority, EventPriority.LOW, "Unexpected priority")
         self.assertEqual(events[0].service, EventService.WALLET, "Unexpected service")
-        self.assertEqual(events[0].message, "Cha-ching! Just received 2 XCH ☘️")
+        self.assertEqual(events[0].message, "Cha-ching! Just received 2 XFX ☘️")
 
     def testFloatPrecision(self):
         with open(self.example_logs_path / "small_values.txt", encoding="UTF-8") as f:
@@ -32,7 +32,7 @@ class TestWalledAddedCoinHandler(unittest.TestCase):
         self.assertEqual(events[0].type, EventType.USER, "Unexpected event type")
         self.assertEqual(events[0].priority, EventPriority.LOW, "Unexpected priority")
         self.assertEqual(events[0].service, EventService.WALLET, "Unexpected service")
-        self.assertEqual(events[0].message, "Cha-ching! Just received 0.000000000001 XCH ☘️")
+        self.assertEqual(events[0].message, "Cha-ching! Just received 0.000000000001 XFX ☘️")
 
 
 if __name__ == "__main__":

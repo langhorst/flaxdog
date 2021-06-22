@@ -16,16 +16,16 @@ class WalletAddedCoinMessage:
 
 
 class WalletAddedCoinParser:
-    """This class can parse info log messages from the chia wallet
+    """This class can parse info log messages from the flax wallet
 
-    You need to have enabled "log_level: INFO" in your chia config.yaml
-    The chia config.yaml is usually under ~/.chia/mainnet/config/config.yaml
+    You need to have enabled "log_level: INFO" in your flax config.yaml
+    The flax config.yaml is usually under ~/.flax/mainnet/config/config.yaml
     """
 
     def __init__(self):
         logging.info("Enabled parser for wallet activity - added coins.")
         self._regex = re.compile(
-            r"([0-9:.]*) wallet (?:src|chia).wallet.wallet_state_manager(?:\s?): "
+            r"([0-9:.]*) wallet (?:src|flax).wallet.wallet_state_manager(?:\s?): "
             r"INFO\s*Adding coin: {'amount': ([0-9]*),"
         )
 

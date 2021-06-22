@@ -13,9 +13,9 @@ from .stat_accumulators.search_time_stats import SearchTimeStats
 from .stat_accumulators.signage_point_stats import SignagePointStats
 from .stat_accumulators.found_proof_stats import FoundProofStats
 from .stat_accumulators.number_plots_stats import NumberPlotsStats
-from src.chia_log.parsers.wallet_added_coin_parser import WalletAddedCoinMessage
-from src.chia_log.parsers.harvester_activity_parser import HarvesterActivityMessage
-from src.chia_log.parsers.finished_signage_point_parser import FinishedSignagePointMessage
+from src.flax_log.parsers.wallet_added_coin_parser import WalletAddedCoinMessage
+from src.flax_log.parsers.harvester_activity_parser import HarvesterActivityMessage
+from src.flax_log.parsers.finished_signage_point_parser import FinishedSignagePointMessage
 from src.notifier.notify_manager import NotifyManager
 from src.notifier import Event, EventType, EventPriority, EventService
 

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 # project
-from src.chia_log.parsers.wallet_added_coin_parser import WalletAddedCoinParser
+from src.flax_log.parsers.wallet_added_coin_parser import WalletAddedCoinParser
 
 
 class TestWalletAddedCoinParser(unittest.TestCase):
@@ -19,8 +19,8 @@ class TestWalletAddedCoinParser(unittest.TestCase):
         for coin in added_coins:
             total_mojos += coin.amount_mojos
 
-        chia = total_mojos / 1e12
-        self.assertEqual(2, chia)
+        flax = total_mojos / 1e12
+        self.assertEqual(2, flax)
 
 
 if __name__ == "__main__":

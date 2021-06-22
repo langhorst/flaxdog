@@ -3,8 +3,8 @@ import unittest
 from pathlib import Path
 
 # project
-from src.chia_log.handlers.daily_stats.stat_accumulators.signage_point_stats import SignagePointStats
-from src.chia_log.parsers.finished_signage_point_parser import FinishedSignagePointParser
+from src.flax_log.handlers.daily_stats.stat_accumulators.signage_point_stats import SignagePointStats
+from src.flax_log.parsers.finished_signage_point_parser import FinishedSignagePointParser
 
 
 class TestSignagePointStats(unittest.TestCase):

@@ -1,6 +1,6 @@
 # Supported Integrations for Notifications
 
-The following integrations are **optional** - `chiadog`
+The following integrations are **optional** - `flaxdog`
 is not dependent on any of them and can also run standalone. That being said, you'll get the most value out of it, when
 you connect with one of the services below to receive real-time notifications about important events. You can also
 enable more than one at the same time - please refer to the [config-example.yaml](config-example.yaml).
@@ -26,7 +26,7 @@ verify the sender email.
 Test with:
 
 ```
-SENDER="sender@example.com" SENDER_NAME="ChiaDog" RECIPIENT="you@example.com" HOST=smtp.example.com PORT=587 USERNAME_SMTP=username PASSWORD_SMTP=password python3 -m unittest tests.notifier.test_smtp_notifier
+SENDER="sender@example.com" SENDER_NAME="FlaxDog" RECIPIENT="you@example.com" HOST=smtp.example.com PORT=587 USERNAME_SMTP=username PASSWORD_SMTP=password python3 -m unittest tests.notifier.test_smtp_notifier
 ```
 
 ## Slack

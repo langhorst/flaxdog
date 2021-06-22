@@ -20,9 +20,9 @@ class TestConfig(unittest.TestCase):
         self.assertEqual(notifier_config["pushover"]["credentials"]["api_token"], "dummy_token")
         self.assertEqual(notifier_config["pushover"]["credentials"]["user_key"], "dummy_key")
 
-        chia_logs_config = config.get_chia_logs_config()
-        self.assertEqual(chia_logs_config["file_log_consumer"]["enable"], True)
-        self.assertEqual(chia_logs_config["file_log_consumer"]["file_path"], "~/.chia/mainnet/log/debug.log")
+        flax_logs_config = config.get_flax_logs_config()
+        self.assertEqual(flax_logs_config["file_log_consumer"]["enable"], True)
+        self.assertEqual(flax_logs_config["file_log_consumer"]["file_path"], "~/.flax/mainnet/log/debug.log")
 
 
 if __name__ == "__main__":

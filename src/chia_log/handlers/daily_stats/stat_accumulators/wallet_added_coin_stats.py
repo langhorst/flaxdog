@@ -18,6 +18,6 @@ class WalletAddedCoinStats(WalletAddedCoinConsumer, StatAccumulator):
         self._total_added_mojos += obj.amount_mojos
 
     def get_summary(self) -> str:
-        chia_coins = self._total_added_mojos / 1e12
-        xch_string = f"{chia_coins:.12f}".rstrip("0").rstrip(".")
-        return f"Received ☘️: {xch_string} XCH"
+        flax_coins = self._total_added_mojos / 1e12
+        xfx_string = f"{flax_coins:.12f}".rstrip("0").rstrip(".")
+        return f"Received ☘️: {xfx_string} XFX"

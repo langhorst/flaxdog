@@ -1,4 +1,4 @@
-"""Log consumers are responsible for fetching chia logs
+"""Log consumers are responsible for fetching flax logs
 and propagating them to subscribers for further handling.
 
 This abstraction should provide an easy ability to switch between

@@ -9,4 +9,4 @@ assignees: ''
 
 Please describe any concrete suggestions for improvement here.
 
-If you have a question or general discussion topic, please [start a new discussion](https://github.com/martomi/chiadog/discussions) instead.
+If you have a question or general discussion topic, please [start a new discussion](https://github.com/langhorst/flaxdog/discussions) instead.

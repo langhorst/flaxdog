@@ -18,10 +18,10 @@ class FinishedSignagePointMessage:
 
 
 class FinishedSignagePointParser:
-    """This class can parse info log messages from the chia harvester
+    """This class can parse info log messages from the flax harvester
 
-    You need to have enabled "log_level: INFO" in your chia config.yaml
-    The chia config.yaml is usually under ~/.chia/mainnet/config/config.yaml
+    You need to have enabled "log_level: INFO" in your flax config.yaml
+    The flax config.yaml is usually under ~/.flax/mainnet/config/config.yaml
     """
 
     def __init__(self):
@@ -29,7 +29,7 @@ class FinishedSignagePointParser:
         # Doing some "smart" tricks with this expression to also match the 64th signage point
         # with the same regex expression. See test examples to see how they differ.
         self._regex = re.compile(
-            r"([0-9:.]*) full_node (?:src|chia).full_node.full_node(?:\s?): INFO\s* ⏲️  [a-z A-Z,]* ([0-9]*)\/64"
+            r"([0-9:.]*) full_node (?:src|flax).full_node.full_node(?:\s?): INFO\s* ⏲️  [a-z A-Z,]* ([0-9]*)\/64"
         )
 
     def parse(self, logs: str) -> List[FinishedSignagePointMessage]:

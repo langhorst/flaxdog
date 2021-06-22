@@ -22,16 +22,16 @@ class HarvesterActivityMessage:
 
 
 class HarvesterActivityParser:
-    """This class can parse info log messages from the chia harvester
+    """This class can parse info log messages from the flax harvester
 
-    You need to have enabled "log_level: INFO" in your chia config.yaml
-    The chia config.yaml is usually under ~/.chia/mainnet/config/config.yaml
+    You need to have enabled "log_level: INFO" in your flax config.yaml
+    The flax config.yaml is usually under ~/.flax/mainnet/config/config.yaml
     """
 
     def __init__(self):
         logging.info("Enabled parser for harvester activity - eligible plot events.")
         self._regex = re.compile(
-            r"([0-9:.]*) harvester (?:src|chia).harvester.harvester(?:\s?): INFO\s*([0-9]+) plots were "
+            r"([0-9:.]*) harvester (?:src|flax).harvester.harvester(?:\s?): INFO\s*([0-9]+) plots were "
             r"eligible for farming ([0-9a-z.]*) Found ([0-9]) proofs. Time: ([0-9.]*) s. "
             r"Total ([0-9]*) plots"
         )

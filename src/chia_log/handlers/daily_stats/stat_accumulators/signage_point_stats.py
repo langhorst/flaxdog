@@ -2,7 +2,7 @@
 from datetime import datetime
 
 # project
-from src.chia_log.handlers.util.calculate_skipped_signage_points import calculate_skipped_signage_points
+from src.flax_log.handlers.util.calculate_skipped_signage_points import calculate_skipped_signage_points
 from .. import FinishedSignagePointMessage, FinishedSignageConsumer, StatAccumulator
 
 

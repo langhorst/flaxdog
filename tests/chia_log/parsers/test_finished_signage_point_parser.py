@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 # project
-from src.chia_log.parsers import finished_signage_point_parser
+from src.flax_log.parsers import finished_signage_point_parser
 
 
 class TestFinishedSignagePointParser(unittest.TestCase):

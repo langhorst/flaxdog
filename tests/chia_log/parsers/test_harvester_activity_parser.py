@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 # project
-from src.chia_log.parsers import harvester_activity_parser
+from src.flax_log.parsers import harvester_activity_parser
 
 
 class TestHarvesterActivityParser(unittest.TestCase):

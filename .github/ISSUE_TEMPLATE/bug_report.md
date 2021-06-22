@@ -15,4 +15,4 @@ A clear and concise description of what the bug is and how it can be reproduced.
  - OS: 
  - Python version:
  - PIP version:
- - Chia version:
+ - Flax version:

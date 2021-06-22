@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from random import randrange
 
 # project
-from src.chia_log.handlers.util.calculate_skipped_signage_points import calculate_skipped_signage_points
+from src.flax_log.handlers.util.calculate_skipped_signage_points import calculate_skipped_signage_points
 
 
 class TestCalculateSkippedSignagePoints(unittest.TestCase):

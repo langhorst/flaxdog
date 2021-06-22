@@ -29,7 +29,7 @@ class DiscordNotifier(Notifier):
                     o.path,
                     urllib.parse.urlencode(
                         {
-                            "username": "chiadog",
+                            "username": "flaxdog",
                             "content": f"**{self.get_title_for_event(event)}**\n{event.message}",
                         }
                     ),

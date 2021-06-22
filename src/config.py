@@ -31,8 +31,8 @@ class Config:
     def get_notifier_config(self):
         return self._get_child_config("notifier")
 
-    def get_chia_logs_config(self):
-        return self._get_child_config("chia_logs")
+    def get_flax_logs_config(self):
+        return self._get_child_config("flax_logs")
 
     def get_log_level_config(self):
         return self._get_child_config("log_level")

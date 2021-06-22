@@ -104,7 +104,7 @@ class KeepAliveMonitor:
                 self._last_keep_alive[event.service] = datetime.now()
 
     def _ping_remote(self):
-        """Ping a remote watchdog that monitors that chiadog is alive
+        """Ping a remote watchdog that monitors that flaxdog is alive
         and hasn't crashed silently. Second level of redundancy ;-)
         """
 

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 # project
-from src.chia_log.handlers import finished_signage_point_handler
+from src.flax_log.handlers import finished_signage_point_handler
 from src.notifier import EventType, EventService, EventPriority
 
 

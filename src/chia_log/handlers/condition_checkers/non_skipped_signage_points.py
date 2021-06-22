@@ -5,8 +5,8 @@ from typing import Optional
 # project
 from . import FinishedSignageConditionChecker
 from src.notifier import Event, EventService, EventType, EventPriority
-from src.chia_log.parsers.finished_signage_point_parser import FinishedSignagePointMessage
-from src.chia_log.handlers.util.calculate_skipped_signage_points import calculate_skipped_signage_points
+from src.flax_log.parsers.finished_signage_point_parser import FinishedSignagePointMessage
+from src.flax_log.handlers.util.calculate_skipped_signage_points import calculate_skipped_signage_points
 
 
 class NonSkippedSignagePoints(FinishedSignageConditionChecker):

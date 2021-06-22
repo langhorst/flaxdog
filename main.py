@@ -9,9 +9,9 @@ from pathlib import Path
 from typing import Tuple
 
 # project
-from src.chia_log.handlers.daily_stats.stats_manager import StatsManager
-from src.chia_log.log_consumer import create_log_consumer_from_config
-from src.chia_log.log_handler import LogHandler
+from src.flax_log.handlers.daily_stats.stats_manager import StatsManager
+from src.flax_log.log_consumer import create_log_consumer_from_config
+from src.flax_log.log_handler import LogHandler
 from src.config import Config, is_win_platform
 from src.notifier.keep_alive_monitor import KeepAliveMonitor
 from src.notifier.notify_manager import NotifyManager
@@ -19,7 +19,7 @@ from src.notifier.notify_manager import NotifyManager
 
 def parse_arguments() -> Tuple[ArgumentParser, Namespace]:
     parser = argparse.ArgumentParser(
-        description="ChiaFarmWatch: Watch your crops " "with a piece in mind for the yield."
+        description="FlaxFarmWatch: Watch your crops " "with a piece in mind for the yield."
     )
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--config', type=str, help="path to config.yaml")
@@ -51,11 +51,11 @@ def init(config:Config):
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 
-    logging.info(f"Starting Chiadog ({version()})")
+    logging.info(f"Starting Flaxdog ({version()})")
 
     # Create log consumer based on provided configuration
-    chia_logs_config = config.get_chia_logs_config()
-    log_consumer = create_log_consumer_from_config(chia_logs_config)
+    flax_logs_config = config.get_flax_logs_config()
+    log_consumer = create_log_consumer_from_config(flax_logs_config)
     if log_consumer is None:
         exit(0)
 
