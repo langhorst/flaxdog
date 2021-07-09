@@ -100,7 +100,7 @@ _For updating from previous version, see section below._
 1. Clone the repository
 
 ```
-git clone https://github.com/martomi/flaxdog.git
+git clone https://github.com/langhorst/flaxdog.git
 cd flaxdog
 ```
 
